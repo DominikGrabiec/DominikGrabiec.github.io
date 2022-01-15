@@ -21,7 +21,7 @@
 title: Dominik Grabiec Blog
 email: dominik@dominikgrabiec.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Perosnal blog describing technical opinions, project descriptions, and potentially useful information.
+  Personal blog for describing programming topics, showing off personal projects, and discussing technical opinions.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.dominikgrabiec.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Daemin
