@@ -3,6 +3,7 @@ layout: post
 title:  "Obligatory First Post"
 date:   2022-01-15 16:00:00 +0100
 categories: personal
+excerpt_separator: <!--more-->
 ---
 Hi everyone,
 
@@ -11,3 +12,4 @@ I'm hoping it will be one of many where I describe various technical concepts th
 
 Time will tell though.
 
+<!--more-->
