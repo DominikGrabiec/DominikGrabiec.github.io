@@ -26,6 +26,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.dominikgrabiec.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Daemin
 github_username:  DominikGrabiec
+mastodon:
+  - username: dominikg
+    instance: mastodon.gamedev.place
+linkedin_username: dominik-grabiec-4866288
+stackoverflow_id: "3719"
 
 # Build settings
 theme: minima
