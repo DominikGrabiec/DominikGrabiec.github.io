@@ -2,8 +2,8 @@
 layout: post
 title: "C++ Anti-Patterns: Passing a result variable in by reference badly"
 date: 2022-02-20 12:00:00 +0100
-category: "C++ Anti-Pattern"
-tags: c++
+category: "C++"
+tags: c++ anti-pattern
 excerpt_separator: <!--more-->
 ---
 This C++ anti-pattern might be a bit controversial to some people, as it's a common design holdover from the early days of game development and from C or early C++ code. The pattern is to pass a container into a function by reference (or pointer) and use that to return the result from the function. While in general this is not strictly an anti-pattern, this particular example shown below does deserve that title, and I've seen it written frequently in code, even by experienced senior people.

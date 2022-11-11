@@ -2,7 +2,7 @@
 layout: post
 title: "Lessons Learnt: Know when to bend or break user requirements"
 date: 2022-09-18 12:00:00 +0100
-category: "Lessons Learnt"
+category: "Lessons"
 excerpt_separator: <!--more-->
 ---
 
