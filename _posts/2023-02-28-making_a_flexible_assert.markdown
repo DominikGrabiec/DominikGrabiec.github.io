@@ -60,7 +60,7 @@ template <typename S, typename... Args>
 void handle_assert(std::source_location location, const char* expression, const S& message, Args&&... args)
 {
 	auto format_string = fmt::string_view(message);
-	handle_assert_impl(location, expression, format_string, fmt::make_format_args(format_string, args...));
+	handle_assert_impl(location, expression, format_string, fmt::make_format_args(args...));
 }
 } // namespace error
 
@@ -220,3 +220,9 @@ Also I have not tested this code with tools like Visual Assist or ReSharper, tho
 # Source Code
 
 To finish off this article I have created a simple project on [Github](https://github.com/DominikGrabiec/Assert) that hosts this assert for everyone to use and learn from.
+
+---
+
+# Update 2023-03-21
+
+There was a bug in the `handle_assert` code above which would print the format string twice instead of the values in the assert message. I suspect this was caused by an upgrade from version 8 to version 9 of the fmt library but I'm not certain. The article now contains the updated code to work with the latest version of the fmt library.
