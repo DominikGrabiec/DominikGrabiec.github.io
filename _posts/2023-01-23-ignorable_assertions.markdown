@@ -28,7 +28,7 @@ This will train people on the team to just click ignore on any errors that get p
 At the code level this breaks one of the fundamental features of assertions, that the code following the assertion can rely on the condition in the assertion being true. This means that all code has to be written with excessive error handling to deal with the situation where the user chose to ignore the error and continue. Failure to do so will result in the assertion dialog popping up and then the application crashing anyway.
 
 For example you'll see code like this where you have both assertions and error checking:
-```
+```c++
 ASSERT(pointer != nullptr);
 if (pointer != nullptr) { /* do something */ }
 ```

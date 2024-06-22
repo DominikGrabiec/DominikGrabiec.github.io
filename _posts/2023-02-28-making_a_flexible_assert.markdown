@@ -3,7 +3,7 @@ layout: post
 title: "Making a flexible assert in C++"
 date: 2023-02-28 12:00:00 +0100
 category: "C++"
-tags: c++ preprocessor
+tags: c++ preprocessor assert
 excerpt_separator: <!--more-->
 ---
 

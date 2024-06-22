@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 ---
 This C++ anti-pattern might be a bit controversial to some people, as it's a common design holdover from the early days of game development and from C or early C++ code. The pattern is to pass a container into a function by reference (or pointer) and use that to return the result from the function. While in general this is not strictly an anti-pattern, this particular example shown below does deserve that title, and I've seen it written frequently in code, even by experienced senior people.
 
-```
+```c++
 void FooHolder::GetFooElements( vector<Foo>& out )
 {
 	out.reserve( m_elements.size() );
@@ -37,7 +37,7 @@ The example snippet of code fails on both of these counts and should be rewritte
 
 If it is meant to be a getter function that returns the container of values it should be implemented as one of:
 
-```
+```c++
 vector<Foo> FooHolder::GetFooElements() const
 {
 	return m_elements; // explicit copy
@@ -46,7 +46,7 @@ vector<Foo> FooHolder::GetFooElements() const
 
 Or:
 
-```
+```c++
 const vector<Foo>& FooHolder::GetFooElements() const
 {
 	return m_elements; // return reference, let caller copy if needed
@@ -55,7 +55,7 @@ const vector<Foo>& FooHolder::GetFooElements() const
 
 Or if explicit processing is required for each element:
 
-```
+```c++
 vector<Foo> FooHolder::GetFooElements() const
 {
 	vector<Foo> result;
@@ -72,7 +72,7 @@ This will either return by const reference and let the caller determine if the v
 
 Instead if the function is intended to append to an existing container, it should have its name changed to indicate it will "append" to the given parameter, and the call to reserve needs to take into account the current container size. So it should look like the following:
 
-```
+```c++
 void FooHolder::AppendFooElements( vector<Foo>& out ) const
 {
 	out.reserve( out.size() + m_elements.size() );
@@ -85,7 +85,7 @@ void FooHolder::AppendFooElements( vector<Foo>& out ) const
 
 However if none of this is to your liking there is one last way to fix the function and make it less unpredictable, and that is to add a precondition check to make sure that the container being passed in is empty. This will at least catch the cases in code where this assumption is being violated so that you don't get unexpected results or inefficient memory allocations.
 
-```
+```c++
 void FooHolder::GetFooElements( vector<Foo>& out ) const
 {
 	ASSERT( out.empty(), "Result vector must be empty" );
