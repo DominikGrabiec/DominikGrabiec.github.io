@@ -1,0 +1,25 @@
+---
+layout: post
+title: "CppCon 2024 Presentation & Review"
+date: 2025-01-19 12:00:00 +0100
+category: "C++"
+tags: c++ CppCon CppCon2024
+excerpt_separator: <!--more-->
+---
+
+In September last year (2024) I attended [CppCon](https://cppcon.org/) to present my talk about optimising multi-threaded data building for game development. It was quite a hectic and busy experience, talking to people, attending sessions, many of which were not recorded, and most importantly learning about what other people are doing in the C++ community.
+
+<!--more-->
+
+I'm posting this now quite a few months after the event, as I've been busy with work and other projects. Also the video of [my presentation](https://www.youtube.com/watch?v=ZrpB0gLteUI) has been officially released, with the other videos for the event also slowly trickling out on the [CppCon YouTube Channel](https://www.youtube.com/@CppCon),[^1].
+
+This was my first ever public presentation and I was a bit nervous, so I'm thankful to my friends and colleagues who helped me do practice runs of the presentation at home and at work before going. This was incredibly helpful since at the even I had some technical difficulties with my laptop refusing to cooperate with the AV equipment[^2], so I had to give the talk from memory with no speaker notes, just the slides on screen.
+
+The event itself was kind of intense, I tried to attend every talk, especially the ones that weren't being recorded (the open sessions in the morning, during the lunch break, and in the evening). Meaning most days started at 8am and finished at 10pm, though with breaks in between. Luckily for me the hotel was pretty cool, with an impressive view of the rocky mountains in Colorado, and warm pools to soak in.
+
+If people are interested in C++ I would definitely recommend going to CppCon, I had a blast there and would love to go again.
+
+
+[^1]: If you want to you can buy access to all the CppCon videos [here](https://cppcon.programmingarchive.com/).
+
+[^2]: I suspect this might be due to the laptop being old and not having enough power to transmit the HDMI signal over a distance greater than 1.5 metres, or something like that. 
